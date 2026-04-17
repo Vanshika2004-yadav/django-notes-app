@@ -2,11 +2,11 @@ version: "3.8"
 
 services:
   nginx:
-    build: ./nginx
-    image: nginx
-    container_name: "nginx_cont"
-    ports:
-      - "80:80"
+  build: ./nginx
+  image: nginx
+  container_name: "nginx_cont"
+  ports:
+    - "8080:80"   #
     restart: always
     depends_on:
       - django_app
